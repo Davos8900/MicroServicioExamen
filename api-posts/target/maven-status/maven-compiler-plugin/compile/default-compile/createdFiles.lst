@@ -1,0 +1,17 @@
+com/socialnet/posts/model/TemplateResponse.class
+com/socialnet/posts/ApiPostsApplication.class
+com/socialnet/posts/entity/Comentarios.class
+com/socialnet/posts/service/remote/async/PublicaPost.class
+com/socialnet/posts/repository/ComentariosRepository.class
+com/socialnet/posts/service/ComentarioService.class
+com/socialnet/posts/service/PostServiceImpl.class
+com/socialnet/posts/service/ComentarioServiceImpl.class
+com/socialnet/posts/entity/Posts.class
+com/socialnet/posts/model/ComentariosDto.class
+com/socialnet/posts/repository/PostsRepository.class
+com/socialnet/posts/api/ApiExceptionHandler.class
+com/socialnet/posts/RabbitConfigConsumer.class
+com/socialnet/posts/model/PostsDto.class
+com/socialnet/posts/service/PostService.class
+com/socialnet/posts/service/PostNotFoundException.class
+com/socialnet/posts/api/PostsController.class
