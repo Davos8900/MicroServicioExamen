@@ -1,0 +1,24 @@
+server:  
+  port: ${PORT:8082}
+  
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    metadata-map:
+      instanceId: ${instance.id}
+ 
+feign:
+  circuitbreaker:
+    group:
+      enabled: true
+      
+spring:
+  application:
+    name: api-login

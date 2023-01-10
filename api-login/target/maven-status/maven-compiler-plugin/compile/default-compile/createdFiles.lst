@@ -1,0 +1,15 @@
+com/socialnet/login/service/LoginNoAuthException.class
+com/socialnet/login/service/remote/ClientRemoteConfig.class
+com/socialnet/login/model/LoginInfoDto.class
+com/socialnet/login/service/remote/UsuariosServiceClientFallback.class
+com/socialnet/login/model/TemplateResponse.class
+com/socialnet/login/service/LoginServiceImpl.class
+com/socialnet/login/service/remote/ClientException.class
+com/socialnet/login/service/LoginNotFoundException.class
+com/socialnet/login/service/LoginService.class
+com/socialnet/login/ApiLoginApplication.class
+com/socialnet/login/model/UsuariosDto.class
+com/socialnet/login/service/remote/UsuariosServiceRemote.class
+com/socialnet/login/api/LoginController.class
+com/socialnet/login/api/ApiManejadorExcepcion.class
+com/socialnet/login/model/RespuestaDto.class
