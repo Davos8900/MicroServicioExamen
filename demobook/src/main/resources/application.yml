@@ -1,0 +1,58 @@
+server:
+  port: ${PORT:8084}
+
+instance.id: ${random.value}
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    metadata-map:
+      instanceId: ${instance.id}
+
+ribbon:
+  eureka:
+    enabled: true
+    
+management:
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
+feign:
+  circuitbreaker:
+    group:
+      enabled: true
+
+spring:
+  boot:
+      admin:
+         client:
+          enabled: true
+          url: http://localhost:8090/
+          username: banco
+          password: secreto
+          instance:
+            service-base-url: http://localhost:8090/
+  datasource:
+      driver-class-name: org.postgresql.Driver
+      username: admin
+      password: admin
+      url: jdbc:postgresql://localhost:5432/socialnet
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      namingStrategy: org.hibernate.cfg.EJB3NamingStrategy
+    show-sql: false
+  application:
+    name: api-usuarios
+     
